@@ -25,6 +25,10 @@ jobs:
           command: |
             npm run backend:build
       - deploy:
+          name: eb init www
+          command: |
+            cd udagram-api/www && eb init --region us-east-1 www-dev
+      - deploy:
           name: Deploy to Backend Elastic Beanstalk
           command: |
             cd udagram-api/www && eb deploy Wwwdev-env
