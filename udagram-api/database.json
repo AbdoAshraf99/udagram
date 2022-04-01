@@ -1,28 +1,16 @@
 {
-  "pg": {
-    "driver": "pg",
-    "host": "database-2.czy6ftgntgj2.us-east-1.rds.amazonaws.com",
-    "database": "demo",
-    "user": "postgres",
-    "password": "abdo123456",
-    "port": "5432",
-    "ssl": "true",
-    "schema": "my_schema"
-  },
     "dev": {
       "driver": "pg",
-      "host": "database-2.czy6ftgntgj2.us-east-1.rds.amazonaws.com",
+      "host": "",
       "database": "demo",
-      "user": "postgres",
-      "password": "abdo123456"
+      "user": "",
+      "password": ""
     },
     "test": {
       "driver": "pg",
-      "host": "database-2.czy6ftgntgj2.us-east-1.rds.amazonaws.com",
+      "host": "",
       "database": "demo",
-      "user": "postgres",
-      "password": "abdo123456"
-    },
-    "other": "postgres://postgres:abdo123456@database-2.czy6ftgntgj2.us-east-1.rds.amazonaws.com:5432/demo"
-
+      "user": "",
+      "password": ""
+    }
   }
