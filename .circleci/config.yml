@@ -27,7 +27,7 @@ jobs:
       - deploy:
           name: Deploy to Backend Elastic Beanstalk
           command: |
-            cd www && eb deploy Wwwdev-env
+            cd udagram-api/www && eb deploy Wwwdev-env
       - run:
           name: Front-End Install
           command: |
