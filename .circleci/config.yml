@@ -11,9 +11,6 @@ jobs:
     docker:
       # the base image can run most needed actions with orbs
       - image: "cimg/base:stable"
-    branches:
-      - only:
-        - main
     steps:
       - node/install
       - aws-cli/setup
