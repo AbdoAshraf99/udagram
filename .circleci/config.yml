@@ -8,6 +8,10 @@ orbs:
   # different jobs are calles later in the workflows sections
 jobs:
   build:
+  filters:
+      branches:
+      only: 
+        - main
     docker:
       # the base image can run most needed actions with orbs
       - image: "cimg/base:stable"
@@ -32,6 +36,10 @@ jobs:
           name: Deploy to Backend Elastic Beanstalk
           command: |
             cd udagram-api/www && eb deploy Wwwdev-env
+      - deploy:
+          name: set env variable
+          command: |
+            cd udagram-api && npm run deploy
       - run:
           name: Front-End Install
           command: |

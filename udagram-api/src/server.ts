@@ -7,6 +7,7 @@ import { IndexRouter } from "./controllers/v0/index.router";
 import bodyParser from "body-parser";
 import { V0_FEED_MODELS, V0_USER_MODELS } from "./controllers/v0/model.index";
 import { sequelize } from "./sequelize";
+import { appendFile } from "fs";
 
 (async () => {
   dotenv.config();
@@ -41,4 +42,5 @@ import { sequelize } from "./sequelize";
     console.log(`server running ${port}`);
     console.log(`press CTRL+C to stop server`);
   });
-})();
+}
+)();
