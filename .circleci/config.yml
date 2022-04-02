@@ -6,15 +6,17 @@ orbs:
   eb: circleci/aws-elastic-beanstalk@1.0.0
 
   # different jobs are calles later in the workflows sections
-jobs:
-  build:
-    branches:
-      only:
-        - main
-        - /rc-.*/
-    docker:
-      # the base image can run most needed actions with orbs
-      - image: "cimg/base:stable"
+workflows:
+  build-and-test:
+    jobs:
+      build:
+        branches:
+          only:
+            - main
+            - /rc-.*/
+        docker:
+          # the base image can run most needed actions with orbs
+          - image: "cimg/base:stable"
     steps:
       - node/install
       - aws-cli/setup
