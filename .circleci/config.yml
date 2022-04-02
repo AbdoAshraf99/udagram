@@ -8,7 +8,7 @@ orbs:
   # different jobs are calles later in the workflows sections
 jobs:
   build:
-  filters:
+    filters:
       branches:
       only: 
         - main
