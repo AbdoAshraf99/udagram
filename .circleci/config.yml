@@ -12,7 +12,7 @@ jobs:
       # the base image can run most needed actions with orbs
       - image: "cimg/base:stable"
     branches:
-      only:
+      - only:
         - main
     steps:
       - node/install
