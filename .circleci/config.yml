@@ -14,16 +14,15 @@ workflows:
            cron: "0 0 * * *"
            
 jobs:
-  build:
+  - build:
     docker:
       # the base image can run most needed actions with orbs
       - image: "cimg/base:stable"
-    - build_server:
-      filters:
-        branches:
-          only:
-            - main
-            - master
+    filters:
+      branches:
+        only:
+          - main
+          - master
     steps:
       - node/install
       - aws-cli/setup
