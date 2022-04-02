@@ -41,7 +41,7 @@ jobs:
       - deploy:
           name: set env variable
           command: |
-            cd udagram-api/www && npm run deploy
+            npm run backend:setenv
       - run:
           name: Front-End Install
           command: |
