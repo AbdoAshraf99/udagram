@@ -14,9 +14,9 @@ workflows:
           only:
             - main
             - /rc-.*/
-      docker:
-      # the base image can run most needed actions with orbs
-        - image: "cimg/base:stable"
+        docker:
+        # the base image can run most needed actions with orbs
+          - image: "cimg/base:stable"
     steps:
       - node/install
       - aws-cli/setup
