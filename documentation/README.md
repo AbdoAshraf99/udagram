@@ -1,3 +1,30 @@
+
+
+## infrastructure and app dependencies
+## this app Built With
+- [Angular](https://angular.io/) - Single Page Application Framework
+- [Node](https://nodejs.org) - Javascript Runtime
+- [Express](https://expressjs.com/) - Javascript API 
+Framework
+1. this project use npm
+1. important app dependencies
+#### for backend
+- typescript
+- jasmine
+- dotenv
+- bodybarser
+- jwt
+#### for frontend
+- angular
+- angular cli (ng)
+-angular router
+
+## aws services used
+1. Elastic Beanstalk for Backend
+2. S3 for frontend
+3. RDS for database
+4. EC2
+
 ## pipe line
 we use circleci to manage pipeline proccess
 1. at the first connect your circleci account with your github repository
