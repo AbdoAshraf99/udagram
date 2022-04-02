@@ -10,8 +10,8 @@ jobs:
   build:
     filters:
       branches:
-      only: 
-        - main
+        only: 
+          - main
     docker:
       # the base image can run most needed actions with orbs
       - image: "cimg/base:stable"
